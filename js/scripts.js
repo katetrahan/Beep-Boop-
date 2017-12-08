@@ -1,9 +1,10 @@
 // Business Logic
-function special(numbers) {
-  var parsedNumber = parseInt(numbers);
-  if ((parsedNumber) === 1) {
-    alert("this is 1");
-    console.log(numbers)
+var special = function (userInput) {
+  // var parsedNumber = parseInt(numbers);
+  if ((userInput) === 1) {
+    return false;
+    ;
+    // console.log(numbers)
   };
 }
 
@@ -23,9 +24,13 @@ function special(numbers) {
 $(document).ready(function() {
   $("#formOne").submit(function() {
     event.preventDefault();
-    var userInput = $("input").val();
-    var numbers = userInput.split('');
-    special (numbers);
-  console.log(numbers);
+    var userInput = parseInt($("input").val());
+    var result = special (userInput);
+    // special (numbers);
+  // console.log(numbers);
+  // $("#result").text(parsedNumber);
+  if (!result) {
+    $("#result").text(userInput);
+  }
   })
 });
