@@ -1,16 +1,25 @@
 // Business Logic
-var special = function(userInput) {
+var special = function(number) {
   debugger;
+  var tmp = number;
   var numbers = [];
-  for (index = 0; index < userInput + 1; index+= 1) {
+  if (tmp === 1) {
+    return "weird";
+  }
+  else if (tmp === 0) {
+    return tmp;
+  }
+  for (var index = 0; index < number + 1; index+= 1) {
     numbers.push(index);
-    alert(numbers)
+    // alert(numbers)
   }
-  if (userInput === 0) {
-    alert ("beep!")
-  }
-  else if (userInput ===1) {
-    alert("boop!")
+  return result
+  // return numbers
+  // if (number === 0) {
+  //   alert("beep!")
+  // }
+  // else if (number ===1) {
+  //   alert("boop!")
   }
 
 
@@ -21,7 +30,7 @@ var special = function(userInput) {
   //   return false;
   // }
     // console.log(numbers)
-  };
+
 
 
 
@@ -40,8 +49,16 @@ var special = function(userInput) {
 $(document).ready(function() {
   $("#formOne").submit(function() {
     event.preventDefault();
-    var userInput = parseInt($("input").val());
-    special(userInput);
+    var number = parseInt($("input").val());  // special(userInput);
+    var result = special(number);
+    if (result === "weird"){
+      $("#result").text("beep!")
+    }
+    else {
+      $("#result").text("kate")
+    }
+
+    // $("#result").text(numbers);
 
     // $("numberInput").hide();
 
