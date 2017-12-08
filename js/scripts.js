@@ -2,15 +2,17 @@
 var special = function(number) {
   debugger;
   var tmp = number;
-  var numbers = [];
+  var result = [];
   if (tmp === 1) {
-    return "weird";
+    return "boop";
   }
   else if (tmp === 0) {
-    return tmp;
+    return "beep";
   }
-  for (var index = 0; index < number + 1; index+= 1) {
-    numbers.push(index);
+  else if (tmp !== 1 && tmp !== 0) {
+    for (var index = 0; index < number + 1; index+= 1) {
+      result.push(index);
+  }
     // alert(numbers)
   }
   return result
@@ -51,11 +53,14 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input").val());  // special(userInput);
     var result = special(number);
-    if (result === "weird"){
+    if (result === "boop"){
+      $("#result").text("boop!")
+    }
+    else if (result === "beep") {
       $("#result").text("beep!")
     }
     else {
-      $("#result").text("kate")
+      $("#result").text(result);
     }
 
     // $("#result").text(numbers);
