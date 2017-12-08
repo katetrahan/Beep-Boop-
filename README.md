@@ -12,7 +12,7 @@ _This is an HTML page that uses JavaScript to convert a number to a Roman numera
 ### Specs
 | Behavior | Input | Output |
 | :-------------     | :------------- | :-------------
-| **Can count up to the provided number** | "5" | [1,2,3,4,5] |
+| **Can count up to the provided number** | "5" | [0,1,2,3,4,5] |
 | **Can replace numbers that contain 1 with the word "Boop!"**| "11" | "Boop!" |
 | **Can replace numbers that contain 3 with the word "Beep!"** | "3" | "Beep!" |
 | **Can divide all numbers by 3** | 12 | 4 |

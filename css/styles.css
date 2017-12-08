@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+}
+h1 {
+  font-size: 50pt;
+}
+
+#input {
+  font-size: 20pt;
+}
+
+.jumbotron {
+  padding: 4px;
+  background-color: #eca1a6
+}
+
+#result {
+  color: white;
+}
