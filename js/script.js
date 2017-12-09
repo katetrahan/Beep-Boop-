@@ -2,10 +2,10 @@
 var special = function(number) {
   debugger;
   var result = [];
-  var ones = parseInt(number.reverse().slice(0));
+  var ones = parseInt(number);
   if (ones = 1) {
     var count = ones-1
-    for (i=0; i < count + 1; i++) {
+    for (i=0; i < ones.length; i++) {
       result.push("boop");
     } return result;
   } else if (ones = 0) {
