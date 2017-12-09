@@ -42,8 +42,6 @@ var special = function(number) {
           result.push(index);
           for (var i = 0; i < exceptions.length; i += 1) {
             if (result === exceptions) {
-
-            return "boop"
           }
         }
       }

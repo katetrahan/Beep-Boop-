@@ -2,13 +2,15 @@
 var special = function(number) {
   debugger;
   var result = [];
+  tmp = []
   var ones = parseInt(number);
-  if (ones = 1) {
-    var count = ones-1
-    for (i=0; i < ones.length; i++) {
+  tmp.push(ones)
+  if (ones = 0) {
+    // var count = ones-1
+    for (i=0; i < tmp.length; i++) {
       result.push("boop");
     } return result;
-  } else if (ones = 0) {
+  } else  {
     result.push("beep")
   }return result;
 };
@@ -42,7 +44,7 @@ var special = function(number) {
       event.preventDefault();
       var number = $("input").val();  // special(userInput);
       var result = special(number);
-      if (result === 0){
+      if (result === "boop"){
         $("#result").text("boop!")
       }
     })
