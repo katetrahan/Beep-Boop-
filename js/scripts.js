@@ -38,10 +38,11 @@ var special = function(number) {
   //  }
     // else if (tmp !== 1 && tmp !== 0) {
     if (tmp !== 1 && tmp !== 0) {
-      for (var index = 0; index < number + 1; index+= 1) {
+      for (var index = 0; index <  number + 1; index += 1) {
           result.push(index);
           for (var i = 0; i < exceptions.length; i += 1) {
-          if (result === exceptions) {
+            if (result === exceptions) {
+
             return "boop"
           }
         }
@@ -55,22 +56,6 @@ var special = function(number) {
    return result
 }
 // };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
